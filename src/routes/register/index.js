@@ -10,7 +10,7 @@
 import React from 'react';
 import Register from './Register';
 
-const title = 'New User Registration';
+const title = 'New User Registration!!';
 
 export default {
 
