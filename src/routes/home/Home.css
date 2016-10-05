@@ -37,3 +37,9 @@
 .newsDesc {
   display: block;
 }
+
+.codeblock {
+  background: #f3f3f3;
+  padding: 10px;
+  font-family: var(--font-family-mono);
+}
