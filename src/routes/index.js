@@ -9,7 +9,6 @@ export default {
   children: [
     require('./home').default,
     require('./login').default,
-    require('./register').default,
 
     // place new routes before...
     require('./content').default,

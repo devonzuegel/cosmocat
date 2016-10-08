@@ -7,7 +7,6 @@ import { host } from '../src/config';
 const routes = [
   '/',
   '/login',
-  '/register',
   '/about',
   '/404',
 ];
