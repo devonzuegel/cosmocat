@@ -6,7 +6,6 @@ import { host } from '../src/config';
 // Enter your paths here which you want to render as static
 const routes = [
   '/',
-  '/contact',
   '/login',
   '/register',
   '/about',

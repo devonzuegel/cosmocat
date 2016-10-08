@@ -13,7 +13,6 @@ function Header() {
 
         <div className={cx(s.root, s.nav)} role="navigation">
           <Link className={s.link} to="/about">About</Link>
-          <Link className={s.link} to="/contact">Contact</Link>
           <Link className={cx(s.link, s.highlight)} to="/login">Log in</Link>
         </div>
 
