@@ -9,14 +9,9 @@ function Home({ users }) {
       <div className={s.root}>
         <div className={s.container}>
           <h1 className={s.title}>React.js News!!</h1>
-          <ul className={s.news}>
-            {users.map((user, index) => (
-              <li key={index} className={s.newsItem}>
-                <img src={user.profile.picture}></img>
-                <pre className={s.codeblock}>{JSON.stringify(user, null, '\t')}</pre>
-              </li>
-            ))}
-          </ul>
+          <pre>
+            {JSON.stringify(users, null, '  ')}
+          </pre>
         </div>
       </div>
     </Layout>
