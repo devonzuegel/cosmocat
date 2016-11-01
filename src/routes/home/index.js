@@ -21,7 +21,7 @@ export default {
     const { data } = await resp.json();
 
     return {
-      title: 'React Starter Kit',
+      title: 'Home',
       component: <Home users={data} />,
     };
   },
