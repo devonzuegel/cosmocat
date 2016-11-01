@@ -5,9 +5,11 @@ import fetch from './lib/fetch';
 // TODO: Update deployment URL
 // For more information visit http://gitolite.com/deploy.html
 const getRemote = (slot) => ({
-  name: slot || 'production',
-  url: `https://example${slot ? `-${slot}` : ''}.scm.azurewebsites.net:443/example.git`,
-  website: `http://example${slot ? `-${slot}` : ''}.azurewebsites.net`,
+  name:    slot || 'production',
+  url:     'https://git.heroku.com/afternoon-thicket-49277.git',
+  website: 'http://afternoon-thicket-49277.herokuapp.com/',
+  // url: `https://example${slot ? `-${slot}` : ''}.scm.azurewebsites.net:443/example.git`,
+  // website: `http://example${slot ? `-${slot}` : ''}.azurewebsites.net`,
 });
 
 /**
