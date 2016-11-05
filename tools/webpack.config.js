@@ -34,6 +34,8 @@ const config = {
     sourcePrefix: '  ',
   },
 
+  devtool: 'source-map',
+
   module: {
     loaders: [
       {

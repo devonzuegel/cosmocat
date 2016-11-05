@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { analytics, _rollbarConfig } from '../config';
+import { analytics, rollbar_config } from '../config';
 import rollbarSetup from '../core/rollbar.umd.nojson.min';
 
 function Html({ title, description, style, script, children }) {
@@ -16,8 +16,12 @@ function Html({ title, description, style, script, children }) {
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
-        {script && <script src={script} />}
-        {analytics.google.trackingId &&
+        {
+          script && <script src={script} />
+        }
+
+        {
+          analytics.google.trackingId &&
           <script
             dangerouslySetInnerHTML={{ __html:
             'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' +
@@ -27,12 +31,13 @@ function Html({ title, description, style, script, children }) {
 
         {
           <script dangerouslySetInnerHTML={{ __html: `
-            var _rollbarConfig = ${JSON.stringify(_rollbarConfig)};
+            var _rollbarConfig = ${JSON.stringify(rollbar_config)};
             ${rollbarSetup};
           `}} />
         }
 
-        {analytics.google.trackingId &&
+        {
+          analytics.google.trackingId &&
           <script src="https://www.google-analytics.com/analytics.js" async defer />
         }
       </body>
