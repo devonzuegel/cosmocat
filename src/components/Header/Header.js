@@ -15,7 +15,10 @@ function Header() {
           <Link className={cx(s.link, s.highlight)} to="/login">Log in</Link>
         </div>
 
-        <Link className={s.link} to="/">Dashboard</Link>
+        <Link className={s.link} to="/">
+          <img src={logoUrl} alt='Cosmocat' />
+          Dashboard
+        </Link>
 
       </div>
     </div>

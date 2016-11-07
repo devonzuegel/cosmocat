@@ -7,8 +7,8 @@
 }
 
 .root {
-  background: var(--background-color);
-  color: #fff;
+  // background: var(--background-color);
+  // color: #fff;
 }
 
 .container {
@@ -36,11 +36,11 @@
 .link,
 .link:active,
 .link:visited {
-  color: rgba(255, 255, 255, 0.6);
+  // color: rgba(255, 255, 255, 0.6);
 }
 
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+  // color: rgba(255, 255, 255, 1);
 }
 
 .highlight {
@@ -48,7 +48,7 @@
   margin-left: 8px;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.15);
-  color: #fff;
+  // color: #fff;
 }
 
 .highlight:hover {
@@ -56,5 +56,5 @@
 }
 
 .spacer {
-  color: rgba(255, 255, 255, 0.3);
+  // color: rgba(255, 255, 255, 0.3);
 }
