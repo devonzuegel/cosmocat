@@ -9,3 +9,4 @@ npm-debug.log
 src/config.js
 database.sqlite-journal
 database.sqlite
+.env
