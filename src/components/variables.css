@@ -1,23 +1,46 @@
 :root {
-  /*
-   * Typography
-   * ======================================================================== */
+  /* Typography ================================================================================ */
 
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-mono: 'Inconsolata XL', monospace;
+  --font-family-mono: 'Roboto Mono', monospace;
+  --font-family-base: 'Roboto', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  /*
-   * Layout
-   * ======================================================================== */
+  /* Layout ==================================================================================== */
 
-  --max-content-width: 1000px;
+  --max-content-width: 760px;
 
-  /*
-   * Media queries breakpoints
-   * ======================================================================== */
+  /* Media queries breakpoints ================================================================= */
 
-  --screen-xs-min: 480px;  /* Extra small screen / phone */
-  --screen-sm-min: 768px;  /* Small screen / tablet */
-  --screen-md-min: 992px;  /* Medium screen / desktop */
-  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+  --screen-xs-min: 480px;  /* Extra small screen/phone */
+  --screen-sm-min: 768px;  /* Small screen/tablet */
+  --screen-md-min: 992px;  /* Medium screen/desktop */
+  --screen-lg-min: 1200px; /* Large screen/wide desktop */
+
+  /* Font sizes ================================================================================ */
+
+  --font-size-small: 0.85em;
+  --font-size-base: 0.95em;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../../assets/fonts/RobotoMono-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../../assets/fonts/RobotoMono-Medium.ttf');
+  font-weight: bold;
 }

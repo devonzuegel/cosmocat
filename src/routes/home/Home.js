@@ -8,7 +8,12 @@ function Home({ users }) {
     <Layout>
       <div className={s.root}>
         <div className={s.container}>
-          <pre>
+          <p>
+            This is a test. I am testing some text here. These are some sentences I'm writing,
+            some of which will be long and others will be short. And <b>this text should be bold</b>!
+          </p>
+          <p>And now here is a second paragraph. I just wanted to see what it would look like.</p>
+          <pre className={s.codeblock}>
             {JSON.stringify(users, null, '  ')}
           </pre>
         </div>

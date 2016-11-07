@@ -106,7 +106,7 @@ const config = {
         },
       },
       {
-        test: /\.(eot|ttf|wav|mp3)$/,
+        test: /\.(eot|ttf|wav|mp3|otf)$/,
         loader: 'file-loader',
         query: {
           name: DEBUG ? '[path][name].[ext]?[hash]' : '[hash].[ext]',
@@ -181,6 +181,9 @@ const config = {
         // Add vendor prefixes to CSS rules using values from caniuse.com
         // https://github.com/postcss/autoprefixer
         require('autoprefixer')({ browsers: AUTOPREFIXER_BROWSERS }),
+        // Add a font-path attribute to @font-face
+        // https://github.com/seaneking/postcss-fontpath
+        require('postcss-fontpath')({ checkPath: true }),
       ],
       sass: [
         require('autoprefixer')({ browsers: AUTOPREFIXER_BROWSERS }),
