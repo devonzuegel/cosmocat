@@ -17,7 +17,7 @@ function Header() {
 
         <Link className={s.link} to="/">
           <img src={logoUrl} alt='Cosmocat' />
-          Dashboard
+          Cosmocat
         </Link>
 
       </div>

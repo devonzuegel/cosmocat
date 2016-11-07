@@ -10,15 +10,14 @@ import Layout from './Layout';
 describe('Layout', () => {
 
   it('renders children correctly', () => {
+    const child = <div className="child" />
     const wrapper = shallow(
       <App context={{ insertCss: () => {} }}>
-        <Layout>
-          <div className="child" />
-        </Layout>
+        <Layout>{child}</Layout>
       </App>
     );
 
-    expect(wrapper.contains(<div className="child" />)).to.be.true;
+    expect(wrapper.contains(child)).to.be.true;
   });
 
 });

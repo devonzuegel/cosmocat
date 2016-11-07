@@ -6,11 +6,6 @@
   --highlight-color: #F7C331;
 }
 
-.root {
-  // background: var(--background-color);
-  // color: #fff;
-}
-
 .container {
   margin: 0 auto;
   padding: 20px 0;
@@ -30,17 +25,15 @@
   display: inline-block;
   padding: 3px 8px;
   text-decoration: none;
-  font-size: 1.125em; /* ~18px */
+  font-size: 1.125em;
 }
 
 .link,
 .link:active,
 .link:visited {
-  // color: rgba(255, 255, 255, 0.6);
 }
 
 .link:hover {
-  // color: rgba(255, 255, 255, 1);
 }
 
 .highlight {
@@ -48,13 +41,4 @@
   margin-left: 8px;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.15);
-  // color: #fff;
-}
-
-.highlight:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.spacer {
-  // color: rgba(255, 255, 255, 0.3);
 }

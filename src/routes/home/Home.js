@@ -8,7 +8,6 @@ function Home({ users }) {
     <Layout>
       <div className={s.root}>
         <div className={s.container}>
-          <h1 className={s.title}>React.js News!!</h1>
           <pre>
             {JSON.stringify(users, null, '  ')}
           </pre>

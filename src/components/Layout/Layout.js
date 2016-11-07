@@ -4,15 +4,12 @@ import s from './Layout.css';
 import Header from '../Header';
 import Footer from '../Footer';
 
-function Layout({ children }) {
-  return (
-    <div>
-      <Header />
-      {React.Children.only(children)}
-      <Footer />
-    </div>
-  );
-}
+const Layout = ({ children }) => (
+  <div>
+    <Header />
+    {React.Children.only(children)}
+  </div>
+)
 
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
