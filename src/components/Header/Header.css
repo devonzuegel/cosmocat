@@ -1,11 +1,5 @@
 @import '../variables.css';
 
-:root {
-  --brand-color: #61dafb;
-  --background-color: #6B7A8F;
-  --highlight-color: #F7C331;
-}
-
 .microkitLogo {
   width: 30px;
 }

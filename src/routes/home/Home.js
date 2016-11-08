@@ -3,9 +3,10 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../components/Layout';
 import s from './Home.css';
 import { VictoryBar, VictoryChart, VictoryTheme } from 'victory';
+import SantaFeTheme from '../../assets/graph-themes/santa-fe'
 
 const StepsGraph = ({ steps }) => (
-  <VictoryChart theme={VictoryTheme.material}>
+  <VictoryChart theme={SantaFeTheme}>
     <VictoryBar data={steps} x='dateTime' y='value' />
   </VictoryChart>
 )
