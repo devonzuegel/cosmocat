@@ -2,8 +2,42 @@ import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../components/Layout';
 import s from './Home.css';
+import { VictoryBar, VictoryChart, VictoryTheme } from 'victory';
 
-function Home({ users }) {
+const StepsGraph = ({ steps }) => (
+  <VictoryChart theme={VictoryTheme.material}>
+    <VictoryBar data={steps} x='dateTime' y='value' />
+  </VictoryChart>
+)
+
+const Home = ({ users }) => {
+  const steps = [
+    {
+      dateTime: "2016-05-07",
+      value: 8133,
+    }, {
+      dateTime: "2016-05-08",
+      value: 12316,
+    }, {
+      dateTime: "2016-05-09",
+      value: 8231,
+    }, {
+      dateTime: "2016-05-10",
+      value: 10503,
+    }, {
+      dateTime: "2016-05-11",
+      value: 21446,
+    }, {
+      dateTime: "2016-05-12",
+      value: 20860,
+    }, {
+      dateTime: "2016-05-13",
+      value: 19852,
+    }, {
+      dateTime: "2016-05-14",
+      value: 13384,
+    }
+  ]
   return (
     <Layout>
       <div className={s.root}>
@@ -16,6 +50,7 @@ function Home({ users }) {
           <pre className={s.codeblock}>
             {JSON.stringify(users, null, '  ')}
           </pre>
+          <StepsGraph steps={steps} />
         </div>
       </div>
     </Layout>
