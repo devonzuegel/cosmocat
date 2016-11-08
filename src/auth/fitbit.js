@@ -24,7 +24,7 @@ const initialize = (app) => {
   app.get(CALLBACK_URI, (req, res) =>
     client
       .getAccessToken(req.query.code, full_url(CALLBACK_URI))
-      .then((r) => client.get(url, r.access_token).then((data) => res.send(data[0])))
+      .then((r) => res.send({ token: r.access_token }))
       .catch((e) => res.send(e))
   )
 
