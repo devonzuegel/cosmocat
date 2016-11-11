@@ -7,23 +7,24 @@ export default {
   path: '/',
 
   async action() {
-    const resp = await fetch('/graphql', {
+
+    const steps_response = await fetch('/graphql', {
       method: 'post',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        query: '{users{id,email,picture,name}}',
-      }),
+      body: JSON.stringify({query: '{fitbit_steps { value, date }}'}),
       credentials: 'include',
-    });
-    const { data } = await resp.json();
+    })
+
+    const steps = await steps_response.json()
 
     return {
       title: 'Home',
-      component: <Home users={data} />,
-    };
+      component: <Home steps={steps.data.fitbit_steps} />,
+    }
+
   },
 
 };

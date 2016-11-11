@@ -15,7 +15,7 @@ const transform_date_str = date_str => {
 }
 
 export const transform_response = response =>
-  response[0]['activities-steps'].map(s => ({
+  (response[0]['activities-steps'] || []).map(s => ({
     value: parseInt(s.value),
     date:  transform_date_str(s.dateTime),
   }))

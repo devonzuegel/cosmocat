@@ -5,7 +5,6 @@ import {
   GraphQLInt as IntType,
   GraphQLNonNull as NonNull,
 } from 'graphql'
-import GraphQLDate from 'graphql-date'
 
 const FitbitStepType = new ObjectType({
   name: 'FitbitStep',
