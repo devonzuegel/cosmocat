@@ -1,3 +1,4 @@
+import GraphQLDate from 'graphql-date'
 import {
   GraphQLObjectType as ObjectType,
   GraphQLString as StringType,
