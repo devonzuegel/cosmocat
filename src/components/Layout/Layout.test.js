@@ -1,11 +1,11 @@
 /* eslint-env mocha */
 /* eslint-disable padded-blocks, no-unused-expressions */
 
-import React from 'react';
-import { expect } from 'chai';
-import { shallow } from 'enzyme';
-import App from '../App';
-import Layout from './Layout';
+import React from 'react'
+import { expect } from 'chai'
+import { shallow } from 'enzyme'
+import App from '../App'
+import Layout from './Layout'
 
 describe('Layout', () => {
 
@@ -17,7 +17,7 @@ describe('Layout', () => {
       </App>
     );
 
-    expect(wrapper.contains(child)).to.be.true;
+    expect(wrapper.contains(child)).to.be.true
   });
 
 });
