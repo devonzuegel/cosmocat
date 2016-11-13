@@ -1,0 +1,23 @@
+@import '../variables.css';
+
+.parent {
+  box-sizing: 'border-box';
+  display: 'inline';
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family-base);
+  width: '100%';
+  height: 'auto';
+}
+
+.label {
+  background-color: red;
+  fill: blue;
+  font-family: var(--font-family-base);
+}
+
+.bar {
+  stroke: red;
+  stroke-width: 3px;
+  fill: blue;
+}

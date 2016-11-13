@@ -67,6 +67,9 @@ const config = {
       },
       {
         test: /\.css/,
+        include: [
+          path.resolve(__dirname, '../src'),
+        ],
         loaders: [
           'isomorphic-style-loader',
           `css-loader?${JSON.stringify({
